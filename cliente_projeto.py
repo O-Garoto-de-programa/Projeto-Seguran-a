@@ -6,6 +6,10 @@ import json
 import time
 import requests
 
+
+"""Cliente para o Projeto de Segurança em Redes - 2025
+Este cliente se conecta a um servidor, gera chaves Diffie-Hellman,"""
+
 # Parâmetros de Diffie-Hellman
 p = 23 # Número primo
 g = 5 # Gerador
@@ -125,5 +129,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-#####################
 
