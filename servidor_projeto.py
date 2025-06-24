@@ -6,7 +6,11 @@ import json
 import time
 import requests
 
-p = 23
+p = p = int("""
+FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E08
+8A67CC74020BBEA63B139B22514A08798E3404DD
+EF9519B3CD
+""".replace("\n", "").replace(" ", ""), 16)
 g = 5
 
 # Nome de usuário GitHub do servidor
