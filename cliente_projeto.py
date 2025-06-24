@@ -11,7 +11,12 @@ import requests
 Este cliente se conecta a um servidor, gera chaves Diffie-Hellman,"""
 
 # Parâmetros de Diffie-Hellman
-p = 23 # Número primo
+
+p = p = int("""
+FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E08
+8A67CC74020BBEA63B139B22514A08798E3404DD
+EF9519B3CD
+""".replace("\n", "").replace(" ", ""), 16)
 g = 5 # Gerador
 
 # Nome de usuário GitHub do cliente
