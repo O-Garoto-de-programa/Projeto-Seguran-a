@@ -6,12 +6,17 @@ import json
 import time
 import requests
 
-p = p = int("""
+"""Servidor para o Projeto de Segurança em Redes - 2025
+Este servidor recebe uma mensagem assinada de um cliente, verifica a assinatura."""
+
+# Parâmetros de Diffie-Hellman
+g = 5 # Gerador
+# Parâmetro primo p
+p = int("""
 FFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E08
 8A67CC74020BBEA63B139B22514A08798E3404DD
 EF9519B3CD
 """.replace("\n", "").replace(" ", ""), 16)
-g = 5
 
 # Nome de usuário GitHub do servidor
 username_server = "ServerSeguranca2025"
