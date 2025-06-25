@@ -41,9 +41,9 @@ except Exception as e:
 
 # Gera a chave pública do cliente a partir da chave privada
 def gerar_chaves_DH(p, g):
-    a_bytes = os.urandom(32)
+    a_bytes = os.urandom(32) # A chave privada é gerada aleatoriamente
     a = int.from_bytes(a_bytes, 'big')
-    A = pow(g, a, p)
+    A = pow(g, a, p) # Calcula a chave pública A
     return a, A
 
 
