@@ -4,7 +4,7 @@ import os
 from ecdsa import SigningKey, VerifyingKey
 import json
 import time
-import requests
+import requests 
 
 
 """Cliente para o Projeto de Segurança em Redes - 2025
@@ -34,7 +34,7 @@ response = requests.get(url)
 chave_publica_servidor = response.content
 
 try:
-    vk = VerifyingKey.from_pem(chave_publica_servidor)
+    vk = VerifyingKey.from_pem(chave_publica_servidor) # Carrega a chave pública do servidor
 except Exception as e:
     print(f"Erro ao carregar a chave pública ECDSA do servidor: {e}")
     exit(1)
@@ -131,6 +131,7 @@ def main():
 
     client_socket.close()
     print(f"Conexão fechada com o servidor.")
+
 
 if __name__ == "__main__":
     main()
