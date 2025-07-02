@@ -33,8 +33,8 @@ Projeto_Seguranca/
 ├── chaves_ECDSA/
 │ ├── cliente.pem # Chave privada ECDSA do cliente
 │ ├── servidor.pem # Chave privada ECDSA do servidor
-├── chaves_cliente.json # Armazena Key_AES e Key_HMAC derivadas no cliente
-├── chaves_servidor.json # Armazena Key_AES e Key_HMAC derivadas no servidor
+├── chaves_cliente.json # Key_AES e Key_HMAC derivadas no cliente
+├── chaves_servidor.json # Key_AES e Key_HMAC derivadas no servidor
 ├── requirements.txt # Dependências do projeto
 
 
@@ -87,10 +87,25 @@ python cliente_projeto.py
 ```
 
 Isso realiza:
-    - Troca de chaves Diffie-Hellman
-    - Assinatura/verificação com ECDSA
-    - Derivação das chaves AES e HMAC (via PBKDF2)
-    - Salvamento das chaves derivadas em arquivos .json
+> - Troca de chaves Diffie-Hellman  
+> - Assinatura/verificação com ECDSA  
+> - Derivação das chaves AES e HMAC (via PBKDF2)  
+> - Salvamento das chaves derivadas em arquivos `.json`
+
+
+### 5. Enviar e receber a mensagem segura
+
+**Terminal 1 – Rode o receptor (servidor):**
+
+```bash
+python servidor_recebe_mensagem.py
+```
+
+Terminal 2 – Envie a mensagem:
+```bash
+python cliente_envia_mensagem.py
+```
+
 
 
 
