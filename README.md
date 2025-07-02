@@ -71,6 +71,30 @@ pip install -r requirements.txt
 pip install ecdsa pycryptodome requests
 ```
 
+### 4. Realizar o Handshake e derivação das chaves
+
+Abra dois terminais para executar cliente e servidor.
+
+**Terminal 1 – Inicie o servidor:**
+
+```bash
+python servidor_projeto.py
+
+```
+Terminal 2 – Execute o cliente:
+```bash
+python cliente_projeto.py
+```
+    Isso realiza:
+
+        Troca de chaves Diffie-Hellman
+
+        Assinatura/verificação com ECDSA
+
+        Derivação das chaves AES e HMAC (via PBKDF2)
+
+        Salvamento das chaves derivadas em arquivos .json
+
 
 
 
