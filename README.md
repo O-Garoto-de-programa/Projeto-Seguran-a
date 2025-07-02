@@ -104,7 +104,7 @@ Isso realiza:
 python servidor_recebe_mensagem.py
 ```
 
-Terminal 2 – Envie a mensagem:
+**Terminal 2 – Envie a mensagem:**
 ```bash
 python cliente_envia_mensagem.py
 ```
