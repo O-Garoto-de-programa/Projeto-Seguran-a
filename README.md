@@ -79,22 +79,19 @@ Abra dois terminais para executar cliente e servidor.
 
 ```bash
 python servidor_projeto.py
-
 ```
-Terminal 2 – Execute o cliente:
+
+***Terminal 2 – Execute o cliente:***
 ```bash
 python cliente_projeto.py
 ```
-    Isso realiza:
 
-        Troca de chaves Diffie-Hellman
-
-        Assinatura/verificação com ECDSA
-
-        Derivação das chaves AES e HMAC (via PBKDF2)
-
-        Salvamento das chaves derivadas em arquivos .json
-
+```markdown
+Isso realiza:
+    - Troca de chaves Diffie-Hellman
+    - Assinatura/verificação com ECDSA
+    - Derivação das chaves AES e HMAC (via PBKDF2)
+    - Salvamento das chaves derivadas em arquivos .json
 
 
 
