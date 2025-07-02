@@ -86,7 +86,6 @@ python servidor_projeto.py
 python cliente_projeto.py
 ```
 
-```markdown
 Isso realiza:
     - Troca de chaves Diffie-Hellman
     - Assinatura/verificação com ECDSA
