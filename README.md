@@ -33,8 +33,8 @@ Projeto_Seguranca/
 ├── chaves_ECDSA/
 │ ├── cliente.pem # Chave privada ECDSA do cliente
 │ ├── servidor.pem # Chave privada ECDSA do servidor
-├── chaves_cliente.json # Key_AES e Key_HMAC derivadas no cliente
-├── chaves_servidor.json # Key_AES e Key_HMAC derivadas no servidor
+├── chaves_cliente.json # Armazena Key_AES e Key_HMAC derivadas no cliente
+├── chaves_servidor.json # Armazena Key_AES e Key_HMAC derivadas no servidor
 ├── requirements.txt # Dependências do projeto
 
 
