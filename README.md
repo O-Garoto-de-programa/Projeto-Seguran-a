@@ -25,19 +25,19 @@ Desenvolver uma aplicação de troca de mensagens seguras em Python, utilizando 
 
 ## 📁 Estrutura do Projeto
 
-markdown
-
+```
 Projeto_Seguranca/
-├── cliente_projeto.py
-├── servidor_projeto.py
-├── cliente_envia_mensagem.py
-├── servidor_recebe_mensagem.py
+├── cliente_projeto.py          # Realiza o handshake (DH + ECDSA) e deriva chaves
+├── servidor_projeto.py         # Recebe o handshake e deriva as chaves
+├── cliente_envia_mensagem.py   # Envia mensagem criptografada com AES e autenticada com HMAC
+├── servidor_recebe_mensagem.py # Recebe a mensagem, valida HMAC e descriptografa
 ├── chaves_ECDSA/
-│   ├── cliente.pem
-│   └── servidor.pem
-├── chaves_cliente.json
-├── chaves_servidor.json
-└── requirements.txt
+│   ├── cliente.pem             # Chave privada ECDSA do cliente
+│   └── servidor.pem            # Chave privada ECDSA do servidor
+├── chaves_cliente.json         # Armazena Key_AES e Key_HMAC derivadas no cliente
+├── chaves_servidor.json        # Armazena Key_AES e Key_HMAC derivadas no servidor
+└── requirements.txt            # Dependências do projeto
+```
 
 
 
