@@ -47,11 +47,31 @@ Projeto_Seguranca/
 
 ```bash
 cd ~/Downloads
+```
 
-2. Criar e ativar o ambiente virtual
+### 2. Criar e ativar o ambiente virtual
 
-Linux/macOS:
+**Linux/macOS:**
 
+```bash
 python3 -m venv venv
-...
+source venv/bin/activate
+```
+
+### 3. Instalar as dependências
+
+**Usando o arquivo `requirements.txt`:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Ou, manualmente:**
+```bash
+pip install ecdsa pycryptodome requests
+```
+
+
+
+
 
