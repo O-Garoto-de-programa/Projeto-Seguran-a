@@ -12,6 +12,8 @@ key_aes = bytes.fromhex(chaves["key_aes"])
 key_hmac = bytes.fromhex(chaves["key_hmac"])
 
 mensagem_clara = "Segredo enviado com seguranca".encode('utf-8')
+#imprir a mensagem clara
+print(f"mensagem_clara: {mensagem_clara}")
 
 iv = get_random_bytes(16)
 
@@ -20,6 +22,9 @@ mensagem_padded = mensagem_clara + bytes([padding_len]) * padding_len
 
 cipher = AES.new(key_aes, AES.MODE_CBC, iv)
 mensagem_criptografada = cipher.encrypt(mensagem_padded)
+
+# imprimir a mensagem criptografada
+print(f"mensagem_criptografada: {mensagem_criptografada}")
 
 conteudo = iv + mensagem_criptografada
 tag_hmac = hmac.new(key_hmac, conteudo, hashlib.sha256).digest()

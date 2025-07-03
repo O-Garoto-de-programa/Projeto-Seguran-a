@@ -38,7 +38,9 @@ mensagem_padded = cipher.decrypt(mensagem_criptografada)
 padding_len = mensagem_padded[-1]
 mensagem = mensagem_padded[:-padding_len]
 
-print("Mensagem recebida com sucesso:")
-print(mensagem.decode())
+try:
+    print("\nMensagem recebida com sucesso: ",mensagem.decode())
+except Exception as e:
+    print(f"\nErro ao decodificar: A mensagem pode ter sido alterada ou corrompida.")
 
 client_socket.close()

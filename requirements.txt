@@ -1,3 +1,7 @@
 ecdsa
 pycryptodome
 requests
+socket
+json
+hashlib
+os

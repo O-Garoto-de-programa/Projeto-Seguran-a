@@ -9,7 +9,7 @@ from hashlib import pbkdf2_hmac
 
 
 g = 5
-p = 23
+p = 115792089237316195423570985008687907853269984665640564039457584007913129640233
 
 username_cliente = "ClientSeguranca2025"
 
@@ -107,10 +107,10 @@ def main():
 
     print("Chaves salvas em chaves_cliente.json")
 
-
+    print("___________________________________________________\n")
 
     client_socket.close()
     print("Conexão fechada com o servidor.")
-
+    
 if __name__ == "__main__":
     main()
